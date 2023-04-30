@@ -1,0 +1,1 @@
+# In linux sudo chmod -R 777 data is needed after creating the empty data folder
