@@ -3,11 +3,11 @@
 # To enable CDC follow the following instructions
 ## Step 1 
 EXEC sys.sp_cdc_enable_db // in the database where the table exists
-# Step 2 
+## Step 2 
 EXEC sys.sp_cdc_enable_table   
 @source_schema = N'dbo',  
 @source_name   = N'TableName',  
 @role_name     = NULL;
   // in the db
-# Reference: 
+## Reference: 
 https://www.analyticsvidhya.com/blog/2021/07/3-methods-for-implementing-change-data-capture/
