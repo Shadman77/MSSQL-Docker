@@ -8,6 +8,7 @@ services:
       SA_PASSWORD: Test_1234
       MSSQL_AGENT_ENABLED: true
     image: mcr.microsoft.com/mssql/server:2019-CU20-ubuntu-20.04
+    # image: mcr.microsoft.com/mssql/server:2022-CU4-ubuntu-20.04
     restart: always
     healthcheck:
         test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Test_1234 -Q 'SELECT 1' || exit 1"]
